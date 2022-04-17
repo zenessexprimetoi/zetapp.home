@@ -14,7 +14,7 @@ body{
     overflow:hidden;
     position: relative;
 }
-#hero:after{
+#hero::after{
     content:'';
     position:absolute;
     left:50%;
@@ -26,7 +26,7 @@ body{
     border-radius: 0 0 50% 50%;
     transform:translateX(-50%) rotate(0deg);
 }
-#hero:before{
+#hero::before{
     content:'';
     position: absolute;
     left:50%;
@@ -106,13 +106,13 @@ body{
     #hero h2{
         font-size:28px;
     }
-    #hero:after{
+    #hero::after{
         width:180%;
         height:95%;
         border-radius:0 0 50% 50%;
         transform:translateX(-50%)rotate(0deg);
     }
-    #hero:before{
+    #hero::before{
         top:0;
         width:180%;
         height:94%;
@@ -121,7 +121,7 @@ body{
     }
 }
 @media(max-width:575px){
-    #hero:after{
+    #hero::after{
         left:40%;
         top:0;
         width:200%;
@@ -129,7 +129,7 @@ body{
         border-radius: 0 0 50% 50%;
         transform: translateX(-50%)rotate(0deg);
     }
-    #hero:before{
+    #hero::before{
         left:50%;
         top:0;
         width:200%;
